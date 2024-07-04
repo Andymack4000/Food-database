@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food database</title>
+</head>
+<body>
+    <h1>Food Database</h1>
+    <div>
+        <!-- <form>
+            <input type="text">
+            <input type="submit" value="Submit">
+        </form>
+    </div> -->
+
+    <div>
+        <h2>What Food do you want to Lookup?</h2>
+    </div>
+    <!-- <div>
+        <button id="button">Press for Macros</button>
+        <button id="createRecordButton">Press to add new record</button>
+    </div> -->
+    <div>
+        <form id="searchForm">
+            <input type="text" placeholder="Search Foods" id="searchField">
+            <input type="submit" id="searchBtn" value="Search Foods">
+        </form>
+    </div>
+    <div>
+        <h2>Get food by macro percentage</h2>
+        <form id="macro-form">
+            <select name="macro-menu" id="macro-menu">
+                <option id="macro-form-protein" value="protein">Protein</option>
+                <option id="macro-form-carbs"value="carbohydrate">Carbs</option>
+                <option id="macro-form-fat" value="total_fat">Fat</option>
+            </select>
+            <select name="less-or-more-than" id="less-or-more-than">
+                <option id="less-than" value="less-than">less than</option>
+                <option id="more-than" value="more-than">more than</option>
+            </select>
+            <input type="number"  id="macro-form-percentage"placeholder="macro %" min="0" max="100">
+            <input type="submit" id="submit-food" value="Search database">
+        </form>
+    </div>
+    <div id="table">
+
+    </div>
+    
+    <script type="module" src="index.js"></script>
+    
+    <script src="index.js"></script>
+</body>
+</html>
